@@ -17,7 +17,7 @@ public class Auth {
     String email;
     String password;
 
-    public Auth(String password, String email, String userName) {
+    public Auth(String userName, String email, String password) {
         this.password = password;
         this.email = email;
         this.userName = userName;
