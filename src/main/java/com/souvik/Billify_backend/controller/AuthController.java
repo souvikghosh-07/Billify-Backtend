@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:5173", "https://billify-frontend.vercel.app"})
+@CrossOrigin(origins = {"http://localhost:5173", "https://billify-frontend.vercel.app","https://billify-frontend-b7wuqn4z8-souvik07.vercel.app"})
 
 public class AuthController {
 
