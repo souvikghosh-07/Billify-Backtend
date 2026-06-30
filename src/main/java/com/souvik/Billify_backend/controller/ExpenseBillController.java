@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:5173", "https://billify-frontend.vercel.app","https://billify-frontend-b7wuqn4z8-souvik07.vercel.app"})
+@CrossOrigin(origins = {"http://localhost:5173", "https://billify-frontend.vercel.app"})
 public class ExpenseBillController {
 
     @Autowired

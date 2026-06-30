@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins =  {"http://localhost:5173", "https://billify-frontend.vercel.app","https://billify-frontend-b7wuqn4z8-souvik07.vercel.app"})
+@CrossOrigin(origins =  {"http://localhost:5173", "https://billify-frontend.vercel.app"})
 
 public class CompanyDetailsController {
     @Autowired
