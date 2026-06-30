@@ -4,10 +4,7 @@ import com.souvik.Billify_backend.model.Auth;
 import com.souvik.Billify_backend.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins = {"http://localhost:5173", "https://billify-frontend.vercel.app"})
@@ -28,5 +25,11 @@ public class AuthController {
     public Auth signIn (@RequestParam String email, @RequestParam String password) {
         return service.signIn(email,password);
 
+    }
+
+
+    @PutMapping("/passwordchange")
+    public String changePassword (@RequestParam int userId,@RequestParam String oldPassword, @RequestParam String newPassword) {
+        return service.changePassword(userId,oldPassword,newPassword);
     }
 }

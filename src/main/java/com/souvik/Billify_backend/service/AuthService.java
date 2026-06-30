@@ -40,5 +40,29 @@ public class AuthService {
             return null;
         }
     }
+
+
+
+    public String changePassword(int userId, String oldPassword, String newPassword) {
+        try{
+            Auth ob = repo.findByUserId(userId);
+            if (ob.getPassword().equals(oldPassword)) {
+                ob.setPassword(newPassword);
+                repo.save(ob);
+                return "Password Change Successful";
+            }
+            else {
+                return "Password Mismatch";
+            }
+
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            return "Please Try Some Time Latter";
+        }
+    }
+
+
 }
 

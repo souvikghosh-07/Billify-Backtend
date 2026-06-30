@@ -22,4 +22,5 @@ public class Auth {
         this.email = email;
         this.userName = userName;
     }
+
 }
